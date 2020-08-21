@@ -7,5 +7,7 @@ cd /BookStack-release/ && \
 	echo yes | php artisan key:generate && \
 	echo yes | php artisan migrate
 
-php-fpm7.3 -R && \
+cat /etc/passwd
+
+php-fpm7.3 & \
 	nginx -g 'daemon off;'
